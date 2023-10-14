@@ -1,0 +1,1 @@
+execute as @a[scores={buttonPress=1..}] run function escapeitems:spawn_item
