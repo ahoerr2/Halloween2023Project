@@ -6,4 +6,4 @@ execute as @a run xp set @s 0 levels
 scoreboard players set @a XP 0
 execute as @a run clear
 title @a title {"text":"GAME OVER","color":"red"}
-teleport @a 30 65 85
+teleport @a 30 66 85
