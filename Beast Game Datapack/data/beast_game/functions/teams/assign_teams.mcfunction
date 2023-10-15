@@ -7,6 +7,7 @@ team add Survivors
 team modify Survivors prefix "[Survivor] "
 team modify Survivors color aqua
 team modify Survivors nametagVisibility never
+team modify Survivors friendlyFire false
 
 team add Ghosts
 team modify Ghosts prefix "[Ghost] "

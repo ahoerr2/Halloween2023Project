@@ -5,5 +5,7 @@ schedule clear beast_game:game_status/xp_loss
 execute as @a run xp set @s 0 levels
 scoreboard players set @a XP 0
 execute as @a run clear
+effect clear @a
+effect give @a minecraft:instant_health 1 10
 title @a title {"text":"GAME OVER","color":"red"}
 teleport @a 30 66 85
