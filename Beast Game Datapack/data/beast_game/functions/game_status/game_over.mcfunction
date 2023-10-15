@@ -1,11 +1,18 @@
+execute as @a[team=Beast] if score #NUM KILLS matches 1 run scoreboard players add @s WINS 1
 function beast_game:teams/remove_teams
+
 scoreboard players set #NUM SURVIVORS 0
-gamemode adventure @a
+scoreboard players set #NUM KILLS 0
+
 schedule clear beast_game:game_status/xp_loss
 execute as @a run xp set @s 0 levels
 scoreboard players set @a XP 0
+scoreboard players set #NUM XP 0
+
+gamemode adventure @a
 execute as @a run clear
 effect clear @a
-effect give @a minecraft:instant_health 1 10
+effect give @a regeneration infinite 1 true
+
 title @a title {"text":"GAME OVER","color":"red"}
 teleport @a 30 66 85
