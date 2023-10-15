@@ -1,1 +1,0 @@
-loot spawn 33 66 78 loot escapeitems:items
