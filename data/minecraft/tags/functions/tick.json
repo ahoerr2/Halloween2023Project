@@ -2,6 +2,6 @@
     "values": [
       "beast_game:button_pressed",
       "beast_game:game_status/game_state",
-      "beast_abilities:beasttimer"
+      "beast_game:beast_abilities/beasttimer"
     ]
   }

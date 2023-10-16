@@ -1,4 +1,4 @@
-function beast_abilities:beastitems
+function beast_game:beast_abilities/beastitems
 scoreboard objectives add VisionTimer dummy "Vision Timer"
 scoreboard objectives add VisionDisplayTimer dummy "Vision Display Timer"
 scoreboard objectives add TickConversionRate dummy "Tick Conversion Rate"

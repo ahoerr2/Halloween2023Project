@@ -1,5 +1,5 @@
 {
     "values": [
-      "beast_abilities:load"
+      "beast_game:beast_abilities/load"
     ]
   }
