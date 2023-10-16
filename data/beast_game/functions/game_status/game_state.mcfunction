@@ -1,4 +1,5 @@
 effect give @a saturation infinite 1 true
+execute as @e[type=item] run data merge entity @s {PickupDelay:0}
 
 execute as @a[team=Beast] if score @s KILLS matches 1 run scoreboard players remove #NUM KILLS 1
 execute as @a[team=Beast] if score @s KILLS matches 1 run scoreboard players remove @s KILLS 1
