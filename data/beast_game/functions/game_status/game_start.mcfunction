@@ -19,7 +19,7 @@ effect give @a[team=Survivors] blindness infinite 0 true
 effect give @a[team=Survivors] speed infinite 0 true
 effect give @a[team=Beast] regeneration infinite 1 true
 
-function beast_abilities:beastsetup
+function beast_game:beast_abilities/beastsetup
 
 title @a[team=Beast] title {"text":"HUNT","color":"dark_red"}
 title @a[team=Beast] subtitle {"text":"Kill all the survivors!","color":"dark_red"}
