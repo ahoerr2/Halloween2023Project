@@ -1,0 +1,1 @@
+function beast_abilities:beasttimer

@@ -12,12 +12,14 @@ execute as @a run xp set @s 300 levels
 scoreboard players set @a XP 300
 scoreboard players set #NUM XP 300
 
-give @a[team=Survivors] minecraft:torch 1
+item replace entity @a[team=Survivors] hotbar.0 with torch{display:{Name:'[{"text": "Survivors Torch","color": "grey","italic": true}]'}} 1 
 
 effect clear @a
 effect give @a[team=Survivors] blindness infinite 0 true
 effect give @a[team=Survivors] speed infinite 0 true
 effect give @a[team=Beast] regeneration infinite 1 true
+
+function beast_abilities:beastsetup
 
 title @a[team=Beast] title {"text":"HUNT","color":"dark_red"}
 title @a[team=Beast] subtitle {"text":"Kill all the survivors!","color":"dark_red"}
