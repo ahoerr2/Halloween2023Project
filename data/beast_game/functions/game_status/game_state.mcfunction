@@ -1,6 +1,10 @@
 effect give @a saturation infinite 1 true
 execute as @e[type=item] run data merge entity @s {PickupDelay:0}
 
+execute if block -137 77 130 minecraft:stone_button[face=floor,facing=north,powered=true] run function beast_game:escape_items/spawn_item
+execute if block -137 77 130 minecraft:stone_button[face=floor,facing=north,powered=true] run function beast_game:game_status/game_start
+setblock -137 77 130 minecraft:stone_button[face=floor,facing=north,powered=false]
+
 execute as @a[team=Beast] if score @s KILLS matches 1 run scoreboard players remove #NUM KILLS 1
 execute as @a[team=Beast] if score @s KILLS matches 1 run scoreboard players remove @s KILLS 1
 

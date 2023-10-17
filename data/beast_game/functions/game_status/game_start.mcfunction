@@ -12,6 +12,9 @@ execute as @a run xp set @s 300 levels
 scoreboard players set @a XP 300
 scoreboard players set #NUM XP 300
 
+teleport @a[team=Beast] -377 75 69
+teleport @a[team=Survivors] -362 72 72
+
 item replace entity @a[team=Survivors] hotbar.0 with torch{display:{Name:'[{"text": "Survivors Torch","color": "grey","italic": true}]'}} 1 
 
 effect clear @a
