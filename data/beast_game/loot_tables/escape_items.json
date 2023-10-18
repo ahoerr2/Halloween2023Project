@@ -11,6 +11,14 @@
               {
                 "function": "minecraft:set_nbt",
                 "tag": "{CanDestroy:['minecraft:oak_door']}"
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{PickupDelay:32767}"
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{Tag:'escape_item'}" 
               }
             ]
           },
@@ -21,6 +29,14 @@
               {
                 "function": "minecraft:set_nbt",
                 "tag": "{CanDestroy:['minecraft:glass_pane']}"
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{PickupDelay:32767}"
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{Tag:'escape_item'}" 
               }
             ]
           }

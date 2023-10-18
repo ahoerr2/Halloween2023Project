@@ -15,7 +15,7 @@ scoreboard players set #NUM XP 300
 teleport @a[team=Beast] -377 75 69
 teleport @a[team=Survivors] -362 72 72
 
-item replace entity @a[team=Survivors] hotbar.0 with torch{display:{Name:'[{"text": "Survivors Torch","color": "grey","italic": true}]'}} 1 
+item replace entity @a[team=Survivors] hotbar.0 with torch{display:{Name:'[{"text": "Survivors Torch","color":"gray","bold": true}]'}} 1 
 
 effect clear @a
 effect give @a[team=Survivors] blindness infinite 0 true

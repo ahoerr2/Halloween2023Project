@@ -15,4 +15,5 @@ team modify Ghosts color gray
 team modify Ghosts nametagVisibility never
 
 team join Beast @r
+scoreboard players set @a[team=Beast] BEAST 1
 team join Survivors @a[team=]
