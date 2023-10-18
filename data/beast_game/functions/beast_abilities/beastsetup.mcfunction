@@ -5,5 +5,3 @@ scoreboard objectives add TickConversionRate dummy "Tick Conversion Rate"
 scoreboard players set @a[team=Beast] VisionTimer 0
 scoreboard players set @a[team=Beast] VisionDisplayTimer 0
 scoreboard players set @a TickConversionRate 20
-
-

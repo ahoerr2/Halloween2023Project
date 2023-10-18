@@ -1,6 +1,6 @@
 function beast_game:teams/assign_teams
 
-execute as @a run clear
+clear @a
 gamemode adventure @a
 scoreboard players set #NUM SURVIVORS 0
 execute as @a run scoreboard players add #NUM SURVIVORS 1

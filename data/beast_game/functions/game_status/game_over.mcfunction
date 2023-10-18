@@ -10,7 +10,7 @@ scoreboard players set @a XP 0
 scoreboard players set #NUM XP 0
 
 gamemode adventure @a
-execute as @a run clear
+clear @a
 effect clear @a
 effect give @a regeneration infinite 1 true
 
