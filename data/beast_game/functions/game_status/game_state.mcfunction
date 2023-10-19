@@ -1,6 +1,10 @@
 effect give @a saturation infinite 1 true
-#execute as @e[type=item] if score @p[distance=..1] BEAST matches 0 run data merge entity @s {PickupDelay:0}
-#execute as @e[type=item,tag=!escape_item] run data merge entity @s {PickupDelay:0}
+#function beast_game:escape_items/item_check
+execute as @e[type=item,name="Iron Axe"] if entity @p[scores={BEAST=0}] run data merge entity @s {PickupDelay:0}
+execute as @e[type=item,name="Brick"] if entity @p[scores={BEAST=0}] run data merge entity @s {PickupDelay:0}
+
+execute as @e[type=item,name="Iron Axe"] if entity @p[scores={BEAST=1}] run data merge entity @s {PickupDelay:32767}
+execute as @e[type=item,name="Brick"] if entity @p[scores={BEAST=1}] run data merge entity @s {PickupDelay:32767}
 
 execute if block -137 77 130 minecraft:stone_button[face=floor,facing=north,powered=true] run function beast_game:escape_items/spawn_item
 execute if block -137 77 130 minecraft:stone_button[face=floor,facing=north,powered=true] run function beast_game:game_status/game_start

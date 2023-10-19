@@ -1,5 +1,6 @@
 function beast_game:teams/assign_teams
 
+kill @e[type=!minecraft:player]
 clear @a
 gamemode adventure @a
 scoreboard players set #NUM SURVIVORS 0
