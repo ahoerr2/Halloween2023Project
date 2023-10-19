@@ -38,25 +38,6 @@
                 ]
               }
             ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:brick",
-            "functions": [
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{CanDestroy:['minecraft:glass_pane']}"
-              },
-              {
-                "function": "minecraft:set_name",
-                "name": {
-                  "text": "Brick",
-                  "color": "red",
-                  "bold": true,
-                  "italic": false
-                }
-              }
-            ]
           }
         ]
       }

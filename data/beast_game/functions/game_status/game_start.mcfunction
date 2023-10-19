@@ -1,4 +1,5 @@
 function beast_game:teams/assign_teams
+function beast_game:escape_items/spawn_item
 
 kill @e[type=!minecraft:player]
 clear @a

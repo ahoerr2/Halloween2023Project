@@ -7,3 +7,4 @@ scoreboard objectives add TIMER dummy
 scoreboard objectives add XP dummy
 scoreboard objectives add SURVIVORS dummy
 scoreboard objectives add Wins dummy
+scoreboard objectives add ITEM dummy
