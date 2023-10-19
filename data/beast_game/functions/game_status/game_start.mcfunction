@@ -15,12 +15,13 @@ scoreboard players set #NUM XP 300
 teleport @a[team=Beast] -377 75 69
 teleport @a[team=Survivors] -362 72 72
 
-item replace entity @a[team=Survivors] hotbar.0 with torch{display:{Name:'[{"text": "Survivors Torch","color":"gray","bold": true}]'}} 1 
+item replace entity @a[team=Survivors] hotbar.0 with torch{display:{Name:'[{"text": "Survivor\'s Torch","color":"gray","bold": true,"italic": false}]'}} 1
 
 effect clear @a
 effect give @a[team=Survivors] blindness infinite 0 true
 effect give @a[team=Survivors] speed infinite 0 true
 effect give @a[team=Beast] regeneration infinite 1 true
+effect give @a[team=Beast] resistance infinite 1 true
 
 function beast_game:beast_abilities/beastsetup
 

@@ -14,11 +14,28 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{PickupDelay:32767}"
+                "tag": "{Unbreakable:1b}"
               },
               {
-                "function": "minecraft:set_nbt",
-                "tag": "{Tag:'escape_item'}" 
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "Iron Axe",
+                  "color": "gray",
+                  "bold": true,
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "name": "generic.attack_damage",
+                    "amount": 0.0,
+                    "operation": "multiply_total",
+                    "slot": "mainhand"
+                  }
+                ]
               }
             ]
           },
@@ -31,12 +48,13 @@
                 "tag": "{CanDestroy:['minecraft:glass_pane']}"
               },
               {
-                "function": "minecraft:set_nbt",
-                "tag": "{PickupDelay:32767}"
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{Tag:'escape_item'}" 
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "Brick",
+                  "color": "red",
+                  "bold": true,
+                  "italic": false
+                }
               }
             ]
           }
