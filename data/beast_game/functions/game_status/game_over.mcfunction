@@ -17,4 +17,5 @@ effect clear @a
 effect give @a regeneration infinite 1 true
 
 title @a title {"text":"GAME OVER","color":"red"}
+title @a subtitle {"text":""}
 teleport @a -137 76 143

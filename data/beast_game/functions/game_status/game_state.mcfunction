@@ -10,9 +10,11 @@ execute as @a[team=Beast] if score @s KILLS matches 1 run scoreboard players rem
 execute as @a[team=Beast] if score @s KILLS matches 1 run scoreboard players remove @s KILLS 1
 
 execute if score #NUM SURVIVORS matches 1 run function beast_game:game_status/game_over
-execute as @a if score @s DIED matches 1 run function beast_game:teams/ghost_team
+execute as @a[team=Survivors] if score @s DIED matches 1 run function beast_game:teams/ghost_team
 
-execute as @a[team=Survivors] run function beast_game:game_status/escaped
+execute as @a[team=Survivors] at @s if block ~-1 ~ ~ coal_block run function beast_game:game_status/escaped
+execute as @a[team=Survivors] at @s if block ~ ~-1 ~ coal_block run function beast_game:game_status/escaped
+execute as @a[team=Survivors] at @s if block ~ ~ ~-1 coal_block run function beast_game:game_status/escaped
 
 scoreboard players add #NUM TIMER 1
 execute if score #NUM TIMER matches 21 run scoreboard players set #NUM TIMER 0

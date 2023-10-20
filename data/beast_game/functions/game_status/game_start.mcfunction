@@ -29,7 +29,7 @@ effect give @a[team=Beast] resistance infinite 1 true
 function beast_game:beast_abilities/beastsetup
 
 title @a[team=Beast] title {"text":"HUNT","color":"dark_red"}
-title @a[team=Beast] subtitle {"text":"Kill all the survivors!","color":"dark_red"}
+title @a[team=Beast] subtitle {"text":"Kill all the survivors!","color":"red"}
 
-title @a[team=Survivors] title {"text":"ESCAPE","color":"aqua"}
+title @a[team=Survivors] title {"text":"ESCAPE","color":"dark_aqua"}
 title @a[team=Survivors] subtitle {"text":"Find the item to leave!","color":"aqua"}
