@@ -1,3 +1,5 @@
+
+
 team join Ghosts
 scoreboard players set @s DIED 0
 gamemode spectator

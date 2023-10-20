@@ -3,6 +3,7 @@ function beast_game:teams/remove_teams
 
 scoreboard players set #NUM SURVIVORS 0
 scoreboard players set #NUM KILLS 0
+scoreboard players set #NUM ITEM 0
 
 schedule clear beast_game:game_status/xp_loss
 execute as @a run xp set @s 0 levels
