@@ -10,7 +10,7 @@ execute as @a run xp set @s 0 levels
 scoreboard players set @a XP 0
 scoreboard players set #NUM XP 0
 
-kill @e[type=minecraft:item]
+kill @e[type=minecraft:item_display]
 gamemode adventure @a
 clear @a
 effect clear @a
