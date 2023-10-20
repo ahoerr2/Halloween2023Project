@@ -1,5 +1,5 @@
 effect give @a saturation infinite 1 true
-execute as @e[type=item_display,distance=..2] if entity @e[type=player,team=Survivors] run function beast_game:escape_items/give_item
+execute as @e[type=item_display] as @s if entity @e[type=player,team=Survivors] run function beast_game:escape_items/give_item
 
 execute if block -137 77 130 minecraft:stone_button[face=floor,facing=north,powered=true] run function beast_game:game_status/game_start
 setblock -137 77 130 minecraft:stone_button[face=floor,facing=north,powered=false]
