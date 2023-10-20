@@ -22,6 +22,7 @@ item replace entity @a[team=Survivors] hotbar.0 with torch{display:{Name:'[{"tex
 effect clear @a
 effect give @a[team=Survivors] blindness infinite 0 true
 effect give @a[team=Survivors] speed infinite 0 true
+effect give @a[team=Survivors] weakness infinite 0 true
 effect give @a[team=Beast] regeneration infinite 1 true
 effect give @a[team=Beast] resistance infinite 1 true
 

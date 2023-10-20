@@ -6,5 +6,7 @@ scoreboard objectives add KILLS playerKillCount
 scoreboard objectives add TIMER dummy
 scoreboard objectives add XP dummy
 scoreboard objectives add SURVIVORS dummy
-scoreboard objectives add Wins dummy
+scoreboard objectives add Wins dummy 
+scoreboard objectives setdisplay below_name Wins
 scoreboard objectives add ITEM dummy
+scoreboard objectives add SPAWN dummy
