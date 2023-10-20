@@ -1,4 +1,4 @@
-execute if score @s ITEM matches 1 run function beast_game:escape_items/spawn_item
+execute as @s if score @s ITEM matches 1 run function beast_game:escape_items/respawn_item
 
 team join Ghosts
 scoreboard players set @s DIED 0
