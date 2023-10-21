@@ -1,7 +1,7 @@
 function beast_game:teams/assign_teams
 function beast_game:escape_items/spawn_item
 
-kill @e[type=!minecraft:player]
+kill @e[type=minecraft:item_display]
 clear @a
 gamemode adventure @a
 scoreboard players set #NUM SURVIVORS 0
