@@ -1,5 +1,6 @@
 execute as @a[team=Beast] if score #NUM KILLS matches 1 run scoreboard players add @s Wins 1
 function beast_game:teams/remove_teams
+function beast_game:escape_items/repair_exits
 
 scoreboard players set #NUM SURVIVORS 0
 scoreboard players set #NUM KILLS 0

@@ -1,5 +1,6 @@
 execute as @s if score @s ITEM matches 1 run function beast_game:escape_items/respawn_item
 
+effect clear
 execute as @s run clear
 execute as @s run team join Ghosts
 execute as @s run gamemode spectator
