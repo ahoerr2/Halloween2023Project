@@ -9,8 +9,9 @@ setblock -137 77 130 minecraft:stone_button[face=floor,facing=north,powered=fals
 #Check if a player is near the item display for the item
 execute as @e[type=item_display] at @s if entity @e[type=player,team=Survivors,distance=..2] run function beast_game:escape_items/give_item
 
-#Check if a player uses the axe to break the crafting bench
+#Check conditions for various escape items
 execute as @a[scores={AXE=1}] run function beast_game:escape_items/axe
+execute as @a[nbt={SelectedItem:{id:"minecraft:brick"}}] at @s if entity @e[type=armor_stand,name="Unstable Window",distance=..2] run function beast_game:escape_items/brick
 
 #Check if the beast kills a player for purposes of checking beast win (killing all survivors)
 execute as @a[team=Beast] if score @s KILLS matches 1 run scoreboard players remove #NUM KILLS 1
@@ -20,10 +21,8 @@ execute as @a[team=Beast] if score @s KILLS matches 1 run scoreboard players rem
 execute if score #NUM SURVIVORS matches 1 run function beast_game:game_status/game_over
 execute as @a[team=Survivors] if score @s DIED matches 1 run function beast_game:teams/ghost_team
 
-#Track if a player escapes through any of the routes
-execute as @a[team=Survivors] at @s if block ~1 ~ ~ coal_block run function beast_game:game_status/escaped
-execute as @a[team=Survivors] at @s if block ~ ~-1 ~ coal_block run function beast_game:game_status/escaped
-execute as @a[team=Survivors] at @s if block ~ ~ ~-1 coal_block run function beast_game:game_status/escaped
+#Check if the player has escaped
+execute as @a[team=Survivors] run function beast_game:exit_functions/escape_check
 
 #Timer for the game length and the XP bar display
 scoreboard players add #NUM TIMER 1

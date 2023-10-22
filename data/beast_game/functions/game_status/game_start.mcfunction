@@ -1,4 +1,5 @@
 function beast_game:teams/assign_teams
+function beast_game:exit_functions/repair_exits
 function beast_game:escape_items/spawn_item
 
 kill @e[type=minecraft:item_display]
