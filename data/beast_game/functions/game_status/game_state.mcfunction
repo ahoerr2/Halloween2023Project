@@ -9,6 +9,9 @@ setblock -137 77 130 minecraft:stone_button[face=floor,facing=north,powered=fals
 #Check if a player is near the item display for the item
 execute as @e[type=item_display] at @s if entity @e[type=player,team=Survivors,distance=..2] run function beast_game:escape_items/give_item
 
+#Check if a player uses the axe to break the crafting bench
+execute as @a[scores={AXE=1}] run function beast_game:escape_items/axe
+
 #Check if the beast kills a player for purposes of checking beast win (killing all survivors)
 execute as @a[team=Beast] if score @s KILLS matches 1 run scoreboard players remove #NUM KILLS 1
 execute as @a[team=Beast] if score @s KILLS matches 1 run scoreboard players remove @s KILLS 1
