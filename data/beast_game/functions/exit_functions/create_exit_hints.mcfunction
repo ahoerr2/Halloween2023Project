@@ -1,3 +1,8 @@
+#Make sure any existing ones are removed
+execute as @e[type=armor_stand,name="Crafting Table"] run kill @s
+execute as @e[type=armor_stand,name="Unstable Window"] run kill @s
+execute as @e[type=armor_stand,name="Cracked Wall"] run kill @s
+
 #Summon armor stand for Axe hint
 summon minecraft:armor_stand -393 75 67 {CustomName:'{"text":"Crafting Table"}',Marker:1,Invisible:1}
 
