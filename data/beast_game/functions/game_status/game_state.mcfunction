@@ -28,5 +28,6 @@ execute if score #NUM TIMER matches 21 run scoreboard players set #NUM TIMER 0
 execute if score #NUM TIMER matches 20 run function beast_game:game_status/xp_loss
 execute if score #NUM XP matches 1 run function beast_game:game_status/game_over
 
-#Display hint if a player is near any of the possible escape routes
-execute if score #NUM TIMER matches 20 run function beast_game:exit_functions/hint_check
+#Exit particle effects and display hint if a player is near any of the possible escape routes
+function beast_game:exit_functions/exit_particles
+execute as @a[team=Survivors] run function beast_game:exit_functions/hint_check
