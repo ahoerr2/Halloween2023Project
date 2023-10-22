@@ -9,6 +9,7 @@ execute as @a run scoreboard players add #NUM SURVIVORS 1
 execute as @a run scoreboard players add #NUM KILLS 1
 scoreboard players set @a KILLS 0
 scoreboard players set @a DIED 0
+scoreboard players set @a HINT 0
 
 execute as @a run xp set @s 300 levels
 scoreboard players set @a XP 300
