@@ -11,3 +11,4 @@ scoreboard objectives setdisplay below_name Wins
 scoreboard objectives add ITEM dummy
 scoreboard objectives add HINT dummy
 scoreboard objectives add AXE minecraft.mined:minecraft.crafting_table
+scoreboard objectives add LEVER dummy

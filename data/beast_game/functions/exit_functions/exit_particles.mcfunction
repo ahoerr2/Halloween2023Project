@@ -9,3 +9,6 @@ particle dust 0.97 0.5 0.1 1 -379.01 105 51 0 0.45 0 0.01 5 force
 
 #Particles for TNT route
 particle minecraft:falling_dust gravel -435.25 68.75 62 -1 0 0 1 1 force
+
+#Particles for Button route
+particle minecraft:flame -454 74.1 35 0.25 0 0.25 0.01 1 force

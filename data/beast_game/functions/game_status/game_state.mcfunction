@@ -7,11 +7,12 @@ execute if block -137 77 130 minecraft:stone_button[face=floor,facing=north,powe
 setblock -137 77 130 minecraft:stone_button[face=floor,facing=north,powered=false]
 
 #Check if a player is near the item display for the item
-execute as @e[type=item_display] at @s if entity @e[type=player,team=Survivors,distance=..2] run function beast_game:escape_items/give_item
+execute as @a[team=Survivors] at @s if entity @e[type=item_display,distance=..2] run function beast_game:escape_items/give_item
 
 #Check conditions for various escape items
 execute as @a[scores={AXE=1}] run function beast_game:escape_items/axe
 execute as @a[nbt={SelectedItem:{id:"minecraft:brick"}}] at @s if entity @e[type=armor_stand,name="Unstable Window",distance=..2] run function beast_game:escape_items/brick
+execute if block -454 74 35 minecraft:lever[face=floor,powered=true] if score #NUM LEVER matches 1 run function beast_game:escape_items/lever
 
 #Check if the beast kills a player for purposes of checking beast win (killing all survivors)
 execute as @a[team=Beast] if score @s KILLS matches 1 run scoreboard players remove #NUM KILLS 1
