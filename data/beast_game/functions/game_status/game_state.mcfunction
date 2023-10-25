@@ -1,5 +1,6 @@
 #Anything that should happen at any time, even in the lobby
 effect give @a saturation infinite 1 true
+effect give @a water_breathing infinite 0 true
 execute as @e[type=item] run data merge entity @s {PickupDelay:0}
 
 #Check if the button is pressed to start the game
