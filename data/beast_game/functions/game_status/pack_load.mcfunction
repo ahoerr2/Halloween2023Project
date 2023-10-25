@@ -18,6 +18,7 @@ scoreboard objectives add AXE minecraft.mined:minecraft.crafting_table
 scoreboard objectives add LEVER dummy
 scoreboard objectives add SPAWN dummy
 scoreboard objectives add GAMESTATE dummy
+scoreboard objectives add Players dummy {"text":"Survivors","color":"dark_red","bold":true}
 
 #Create "Start" hologram above start button and update GAMESTATE variable
 kill @e[type=armor_stand,name="Start"]

@@ -1,9 +1,10 @@
-execute as @s if score @s ITEM matches 1 run function beast_game:escape_items/respawn_item
+execute if score @s ITEM matches 1 run function beast_game:escape_items/respawn_item
 execute as @s[team=Survivors] run scoreboard players remove #NUM SURVIVORS 1
+scoreboard players reset @s Players
 
 effect clear
-execute as @s run clear
-execute as @s run team join Ghosts
-execute as @s run gamemode spectator
-execute as @s run scoreboard players set @s DIED 0
-execute as @s run tp @r[team=Survivors]
+clear
+team join Ghosts
+gamemode spectator
+scoreboard players set @s DIED 0
+tp @r[team=Survivors]

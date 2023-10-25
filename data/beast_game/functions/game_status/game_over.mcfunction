@@ -1,4 +1,5 @@
 execute as @a[team=Beast] if score #NUM KILLS matches 1 run scoreboard players add @s Wins 1
+scoreboard players reset @a Players
 function beast_game:teams/remove_teams
 function beast_game:exit_functions/repair_exits
 

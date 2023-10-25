@@ -1,3 +1,5 @@
+scoreboard players reset @a Players
+
 team add Beast
 team modify Beast color dark_red
 team modify Beast nametagVisibility never
@@ -14,3 +16,4 @@ team modify Ghosts nametagVisibility never
 team join Beast @r
 scoreboard players set @a[team=Beast] BEAST 1
 team join Survivors @a[team=]
+scoreboard players set @a[team=Survivors] Players 1
