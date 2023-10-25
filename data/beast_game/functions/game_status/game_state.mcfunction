@@ -3,9 +3,11 @@ effect give @a saturation infinite 1 true
 effect give @a water_breathing infinite 0 true
 execute as @e[type=item] run data merge entity @s {PickupDelay:0}
 
-#Check if the button is pressed to start the game
-execute if block -137 77 130 minecraft:stone_button[face=floor,facing=north,powered=true] run function beast_game:game_status/game_start
-setblock -137 77 130 minecraft:stone_button[face=floor,facing=north,powered=false]
+#Check GAMESTATE variable and either start the game or join the spectator team
+execute if block -146 147 42 minecraft:polished_blackstone_button[face=floor,facing=west,powered=true] if score #NUM GAMESTATE matches 0 run function beast_game:game_status/game_start
+execute if score #NUM GAMESTATE matches 0 run setblock -146 147 42 minecraft:polished_blackstone_button[face=floor,facing=west,powered=false]
+execute at @e[type=armor_stand,name="Spectate"] as @e[type=player,team=,limit=1] if block -146 147 42 minecraft:polished_blackstone_button[face=floor,facing=west,powered=true] if score #NUM GAMESTATE matches 1 run function beast_game:teams/ghost_team
+execute if score #NUM GAMESTATE matches 1 run setblock -146 147 42 minecraft:polished_blackstone_button[face=floor,facing=west,powered=false]
 
 #Check if a player is near the item display for the item
 execute as @a[team=Survivors] at @s if entity @e[type=item_display,distance=..2] run function beast_game:escape_items/give_item

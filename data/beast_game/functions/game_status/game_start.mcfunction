@@ -2,6 +2,11 @@ function beast_game:teams/assign_teams
 function beast_game:exit_functions/repair_exits
 function beast_game:escape_items/spawn_item
 
+#Replace button title "Start" with "Spectate" and update GAMESTATE variable
+kill @e[type=armor_stand,name="Start"]
+summon armor_stand -146 148 42 {Invisible:1b,Marker:1b,CustomName:'{"text":"Spectate","color":"gray","bold":true}',CustomNameVisible:1b}
+scoreboard players set #NUM GAMESTATE 1
+
 kill @e[type=minecraft:item_display]
 clear @a
 gamemode adventure @a

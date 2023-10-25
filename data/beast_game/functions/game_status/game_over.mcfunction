@@ -2,6 +2,11 @@ execute as @a[team=Beast] if score #NUM KILLS matches 1 run scoreboard players a
 function beast_game:teams/remove_teams
 function beast_game:exit_functions/repair_exits
 
+#Replace button title "Start" with "Spectate" and update gamestate variable
+kill @e[type=armor_stand,name="Spectate"]
+summon armor_stand -146 148 42 {Invisible:1b,Marker:1b,CustomName:'{"text":"Start","color":"green","bold":true}',CustomNameVisible:1b}
+scoreboard players set #NUM GAMESTATE 0
+
 scoreboard players set #NUM SURVIVORS 0
 scoreboard players set #NUM KILLS 0
 scoreboard players set #NUM ITEM 0
@@ -21,4 +26,4 @@ effect give @a instant_health 1 10 true
 
 title @a title {"text":"GAME OVER","color":"red"}
 title @a subtitle {"text":""}
-teleport @a -137 76 143
+teleport @a -134 146 42 facing -135 146 42
