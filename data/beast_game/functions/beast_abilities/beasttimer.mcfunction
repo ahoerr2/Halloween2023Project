@@ -1,5 +1,5 @@
 # Detects if the player is holding a glowstone block and is on the Beast team, then runs check for the beast eye ability
-execute as @a[nbt={SelectedItem:{id:"minecraft:glowstone"}}, team=Beast,scores={VisionTimer=0}] at @s run function beast_abilities:beasteye
+execute as @a[nbt={SelectedItem:{id:"minecraft:glowstone"}}, team=Beast,scores={VisionTimer=0}] at @s run function beast_game:beast_abilities/beasteye
 
 # For any beasts with vision abiblity timers remove one from the timer
 scoreboard players remove @e[scores={VisionTimer=1..}] VisionTimer 1

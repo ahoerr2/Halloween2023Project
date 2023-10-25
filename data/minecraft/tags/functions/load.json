@@ -1,5 +1,6 @@
 {
     "values": [
-      "beast_abilities:load"
+      "beast_game:game_status/pack_load",
+      "beast_game:exit_functions/create_exit_hints"
     ]
   }
