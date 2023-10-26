@@ -27,7 +27,7 @@ teleport @a[team=Survivors] -363 72 71 facing -364 72 70
 item replace entity @a[team=Survivors] hotbar.0 with torch{display:{Name:'[{"text": "Survivor\'s Torch","color":"gray","bold": true,"italic": false}]'}} 1
 
 effect clear @a
-effect give @a[team=Survivors] blindness infinite 0 true
+effect give @a[team=Survivors] darkness infinite 100 true
 effect give @a[team=Survivors] speed infinite 0 true
 effect give @a[team=Survivors] weakness infinite 0 true
 effect give @a[team=Beast] regeneration infinite 1 true
