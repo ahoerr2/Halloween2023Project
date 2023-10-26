@@ -1,6 +1,7 @@
 {
     "values": [
       "beast_game:game_status/game_state",
-      "beast_game:beast_abilities/beasttimer"
+      "beast_game:beast_abilities/beasttimer",
+      "beast_game:survivor_abilities/survivorheartbeat"
     ]
   }

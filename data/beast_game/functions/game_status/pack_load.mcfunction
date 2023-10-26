@@ -5,6 +5,9 @@ scoreboard objectives add TickConversionRate dummy "Tick Conversion Rate"
 scoreboard objectives add CarrotUsed minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add DashTimer dummy "Dash Timer"
 scoreboard objectives add DashNotification dummy "Dash Notification"
+scoreboard objectives add spook_timer dummy "Spook Timer"
+scoreboard objectives add heartbeat_amt dummy "Heartbeat Amt"
+scoreboard objectives add heartbeat_timer dummy "Heartbeat Timer"
 scoreboard objectives add DIED dummy
 scoreboard objectives add KILLS playerKillCount
 scoreboard objectives add TIMER dummy

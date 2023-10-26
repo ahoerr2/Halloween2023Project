@@ -1,0 +1,1 @@
+tellraw @a {"text": "Survivor Abilities loaded!","color": "blue"}
