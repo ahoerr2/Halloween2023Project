@@ -23,5 +23,5 @@ scoreboard objectives add Players dummy {"text":"Survivors","color":"dark_red","
 #Create "Start" hologram above start button and update GAMESTATE variable
 kill @e[type=armor_stand,name="Start"]
 kill @e[type=armor_stand,name="Spectate"]
-summon armor_stand -146 148 42 {Invisible:1b,Marker:1b,CustomName:'{"text":"Start","color":"green","bold":true}',CustomNameVisible:1b}
+summon armor_stand -149 149 42 {Invisible:1b,Marker:1b,CustomName:'{"text":"Start","color":"green","bold":true}',CustomNameVisible:1b}
 scoreboard players set #NUM GAMESTATE 0
