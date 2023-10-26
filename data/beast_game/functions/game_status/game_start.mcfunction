@@ -1,6 +1,6 @@
 function beast_game:teams/assign_teams
 function beast_game:exit_functions/repair_exits
-function beast_game:escape_items/spawn_item
+
 
 #Replace button title "Start" with "Spectate" and update GAMESTATE variable
 kill @e[type=armor_stand,name="Start"]
@@ -25,15 +25,18 @@ teleport @a[team=Beast] -514 67 17 facing -513 67 17
 teleport @a[team=Survivors] -363 72 71 facing -364 72 70
 
 item replace entity @a[team=Survivors] hotbar.0 with torch{display:{Name:'[{"text": "Survivor\'s Torch","color":"gray","bold": true,"italic": false}]'}} 1
+item replace entity @a[team=Survivors] hotbar.3 with compass{display:{Name:'[{"text": "Survivor\'s Compass","color":"gray","bold": true,"italic": false}]'}} 1
 
 effect clear @a
-effect give @a[team=Survivors] darkness infinite 100 true
+effect give @a[team=Survivors] darkness infinite 0 true
 effect give @a[team=Survivors] speed infinite 0 true
 effect give @a[team=Survivors] weakness infinite 0 true
 effect give @a[team=Beast] regeneration infinite 1 true
 effect give @a[team=Beast] resistance infinite 1 true
 
 function beast_game:beast_abilities/beastsetup
+
+function beast_game:escape_items/spawn_item
 
 title @a[team=Beast] title {"text":"HUNT","color":"dark_red"}
 title @a[team=Beast] subtitle {"text":"Kill all the survivors!","color":"red"}

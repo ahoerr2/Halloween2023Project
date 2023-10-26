@@ -10,15 +10,15 @@ execute as @e[scores={VisionTimer=1..}] run scoreboard players operation @s Visi
 title @a[scores={VisionTimer=1..}] actionbar [{"text":"Cooldown: ","color": "white"},{"score":{"name":"*", "objective":"VisionDisplayTimer"},"color": "red"},{"text":"s","color": "red"}]
 
 # Beast Boost Ability
-execute as @a[scores={CarrotUsed=1..,DashTimer=..0}] at @s run playsound entity.blaze.shoot master @a 
+execute as @a[scores={CarrotUsed=1..,DashTimer=..0}] at @s run playsound entity.illusioner.mirror_move master @s 
 execute as @a[scores={CarrotUsed=1..,DashTimer=..0}] run effect give @s minecraft:speed 1 5 true
 scoreboard players set @a[scores={CarrotUsed=1..,DashTimer=..0}] DashNotification 1
-scoreboard players set @a[scores={CarrotUsed=1..,DashTimer=..0}] DashTimer 120 
+scoreboard players set @a[scores={CarrotUsed=1..,DashTimer=..0}] DashTimer 240 
 scoreboard players reset @a[scores={CarrotUsed=1..}] CarrotUsed
 
 scoreboard players remove @e[scores={DashTimer=1..}] DashTimer 1
 
-execute as @e[scores={DashTimer=..0,DashNotification=1}] at @s run playsound entity.wither.spawn master @a ~ ~ ~ 0.2 1.2 0.2
+execute as @e[scores={DashTimer=..0,DashNotification=1}] at @s run playsound entity.illusioner.prepare_blindness master @s ~ ~ ~ 0.2 1.2 0.2
 execute as @e[scores={DashTimer=..0,DashNotification=1}] run title @s title {"text":"","color":"red"} 
 execute as @e[scores={DashTimer=..0,DashNotification=1}] run title @s subtitle {"text":"Dash Ready","color":"red"} 
 execute as @e[scores={DashTimer=..0,DashNotification=1}] run scoreboard players set @s DashNotification 0

@@ -34,6 +34,10 @@ execute if score #NUM TIMER matches 21 run scoreboard players set #NUM TIMER 0
 execute if score #NUM TIMER matches 20 run function beast_game:game_status/xp_loss
 execute if score #NUM XP matches 1 run function beast_game:game_status/game_over
 
+# Speed boost if player is hit by beast
+execute as @a at @s if entity @s[nbt={HurtTime:10s}] run effect give @s speed 4 3 true
+
+
 #Exit particle effects and display hint if a player is near any of the possible escape routes
 function beast_game:exit_functions/exit_particles
 execute as @a[team=Survivors] run function beast_game:exit_functions/hint_check
