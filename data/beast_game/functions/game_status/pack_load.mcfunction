@@ -9,6 +9,10 @@ scoreboard objectives add DashNotification dummy "Dash Notification"
 scoreboard objectives add spook_timer dummy "Spook Timer"
 scoreboard objectives add heartbeat_amt dummy "Heartbeat Amt"
 scoreboard objectives add heartbeat_timer dummy "Heartbeat Timer"
+scoreboard objectives add vanish_sneaking_notifier dummy "Vanish Sneaking Notifier"
+scoreboard objectives add vanish_percent dummy "Vanish Percent"
+scoreboard objectives add vanish_convert_rate dummy "Vanish Convert Rate"
+scoreboard objectives add vanish_display_rate dummy "Vanish Display Rate"
 scoreboard objectives add DIED dummy
 scoreboard objectives add KILLS playerKillCount
 scoreboard objectives add TIMER dummy
