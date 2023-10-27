@@ -41,6 +41,7 @@ function beast_game:escape_items/spawn_item
 # Survivor nonzero nums
 scoreboard players set @a[team=Survivors] vanish_percent 900
 scoreboard players set @a[team=Survivors] vanish_convert_rate 20
+scoreboard players set @a[team=Survivors] vanish_sneaking_notifier 0
 
 title @a[team=Beast] title {"text":"HUNT","color":"dark_red"}
 title @a[team=Beast] subtitle {"text":"Kill all the survivors!","color":"red"}
