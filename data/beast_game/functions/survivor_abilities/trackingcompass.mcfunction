@@ -8,7 +8,7 @@ execute as @s[scores={compass_windup_time=0..99,compass_windup_notifier=0}] at @
 # Plays the compass ping sound at a constant rate defined by the compass_sound_modulo score (default 10 -> 0.5s)
 execute as @s[scores={compass_windup_time=0..99}] at @s run scoreboard players operation @s compass_sound_time = @s compass_windup_time
 execute as @s[scores={compass_windup_time=0..99}] at @s run scoreboard players operation @s compass_sound_time %= @s compass_sound_modulo
-execute as @s[scores={compass_windup_time=0..99,compass_sound_time=0}] at @s run playsound minecraft:block.note_block.bell block @a ~ ~ ~ 0.7 1.5 0.7
+execute as @s[scores={compass_windup_time=0..99,compass_sound_time=0}] at @s run playsound minecraft:block.note_block.bell block @a[distance=..20] ~ ~ ~ 0.7 1.5 0.7
 
 
 execute if score #NUM ITEM_OBTAINED matches 0 if score #NUM SPAWN matches 1 as @s[scores={compass_windup_time=100..}] at @s run item replace entity @s weapon.mainhand with compass{display:{Name:'[{"text":"Tracking Compass: ","color":"green","italic":false},{"text": "[Calibrated]","color": "dark_green"}]'},Unbreakable:1b,LodestoneDimension:"minecraft:overworld",LodestoneTracked:1b,LodestonePos:{X:-372,Y:61,Z:40}} 1
@@ -26,7 +26,7 @@ title @s[scores={compass_windup_time=100..,compass_tracking_notifier=0}] times 5
 execute as @s[scores={compass_windup_time=100..,compass_tracking_notifier=0}] at @s run title @s title [{"text": ""}] 
 execute if score #NUM ITEM_OBTAINED matches 0 as @s[scores={compass_windup_time=100..,compass_tracking_notifier=0}] at @s run title @s subtitle [{"text": "Tracking Item","color": "green"}] 
 execute if score #NUM ITEM_OBTAINED matches 1 as @s[scores={compass_windup_time=100..,compass_tracking_notifier=0}] at @s run title @s subtitle [{"text": "Tracking Exit","color": "green"}] 
-execute as @s[scores={compass_windup_time=100..,compass_tracking_notifier=0}] at @s run playsound block.note_block.chime block @a ~ ~ ~ 0.7 1 0.7
+execute as @s[scores={compass_windup_time=100..,compass_tracking_notifier=0}] at @s run playsound block.note_block.chime block @a[distance=..20] ~ ~ ~ 0.7 1 0.7
 execute as @s[scores={compass_windup_time=100..,compass_tracking_notifier=0}] at @s run scoreboard players set @s compass_tracking_notifier 1
 
 # Gives players who hold the compass glowing to balance out players who prioritize the compass over limited use
