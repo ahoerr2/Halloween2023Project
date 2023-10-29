@@ -1,19 +1,19 @@
 # When player is safe 
 execute at @e[team=Beast] run scoreboard players add @a[distance=20..,team=Survivors] heartbeat_timer 1
 execute at @e[team=Beast] store result score @a[distance=20..,team=Survivors, scores={heartbeat_timer=100..}] heartbeat_amt run random value 60..115
-execute at @e[team=Beast] run title @a[distance=20..,team=Survivors] actionbar [{"text":"Monitor BPM: ","color":"green"},{"score":{"name":"*","objective":"heartbeat_amt"}}]
+execute at @e[team=Beast] run title @a[distance=20..,team=Survivors,tag=!Vanished] actionbar [{"text":"Monitor BPM: ","color":"green"},{"score":{"name":"*","objective":"heartbeat_amt"}}]
 
 # Runs when player is close by monster
 # execute at @e[team=Beast] run title @a[distance=8..20,team=Survivors] actionbar {"text":"Warning","color":"gold"}
 execute at @e[team=Beast] run scoreboard players add @a[distance=8..20,team=Survivors] heartbeat_timer 4
 execute at @e[team=Beast] store result score @a[distance=8..20,team=Survivors, scores={heartbeat_timer=100..}] heartbeat_amt run random value 125..150
-execute at @e[team=Beast] run title @a[distance=8..20,team=Survivors] actionbar [{"text":"Monit","color":"gold"},{"text": "o","strikethrough": true},{"text": "r BPM: ","strikethrough": false},{"score":{"name":"*","objective":"heartbeat_amt"}}]
+execute at @e[team=Beast] run title @a[distance=8..20,team=Survivors,tag=!Vanished] actionbar [{"text":"Monit","color":"gold"},{"text": "o","strikethrough": true},{"text": "r BPM: ","strikethrough": false},{"score":{"name":"*","objective":"heartbeat_amt"}}]
 
 # Todo make the actionbar alternate between light red and dark red, monster is close so meant to scare the player
 # execute at @e[team=Beast] run title @a[distance=..8,team=Survivors] actionbar {"text":"Run!","color":"red"}
 execute at @e[team=Beast] run scoreboard players add @a[distance=..7,team=Survivors] heartbeat_timer 16
 execute at @e[team=Beast] store result score @a[distance=..7,team=Survivors, scores={heartbeat_timer=100..}] heartbeat_amt run random value 160..430
-execute at @e[team=Beast] run title @a[distance=..7,team=Survivors] actionbar [{"text":"Monitor BPM: ","obfuscated": true, "color":"red"},{"score":{"name":"*","objective":"heartbeat_amt"},"obfuscated": false}]
+execute at @e[team=Beast] run title @a[distance=..7,team=Survivors,tag=!Vanished] actionbar [{"text":"Monitor BPM: ","obfuscated": true, "color":"red"},{"score":{"name":"*","objective":"heartbeat_amt"},"obfuscated": false}]
 
 
 execute at @e[team=Beast] run playsound entity.elder_guardian.curse master @a[distance=..7,team=Survivors,scores={spook_timer=0}] 
