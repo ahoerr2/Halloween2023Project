@@ -6,6 +6,7 @@ function beast_game:exit_functions/repair_exits
 kill @e[type=armor_stand,name="Start"]
 summon armor_stand -149 149 42 {Invisible:1b,Marker:1b,CustomName:'{"text":"Spectate","color":"gray","bold":true}',CustomNameVisible:1b}
 scoreboard players set #NUM GAMESTATE 1
+scoreboard players set #NUM ITEM_OBTAINED 0
 
 title @a times 20 100 20
 
