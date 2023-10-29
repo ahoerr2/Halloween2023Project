@@ -40,6 +40,10 @@ execute as @a at @s if entity @s[nbt={HurtTime:10s}] run effect give @s speed 4 
 # Functions for Survivors
 function beast_game:survivor_abilities/survivorheartbeat
 function beast_game:survivor_abilities/survivorvanish
+function beast_game:survivor_abilities/holdingcompass
+function beast_game:survivor_abilities/holdingtorch
+
+execute as @a[team=Survivors] at @s run function beast_game:survivor_abilities/survivorcompass
 
 
 #Exit particle effects and display hint if a player is near any of the possible escape routes

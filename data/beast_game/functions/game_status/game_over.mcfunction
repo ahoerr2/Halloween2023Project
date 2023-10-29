@@ -25,6 +25,8 @@ effect clear @a
 effect give @a regeneration infinite 10 true
 effect give @a instant_health 1 10 true
 
+title @a times 20 100 20
 title @a title {"text":"GAME OVER","color":"red"}
 title @a subtitle {"text":""}
+setworldspawn -138 146 42 
 teleport @a -134 146 42 facing -135 146 42

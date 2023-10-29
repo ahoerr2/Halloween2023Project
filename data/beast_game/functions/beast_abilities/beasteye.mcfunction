@@ -1,3 +1,3 @@
-effect give @e[team=Survivors] minecraft:glowing 3 1 true
+effect give @e[team=Survivors,tag=!Vanished] minecraft:glowing 3 1 true
 scoreboard players set @s VisionTimer 300
 playsound minecraft:entity.evoker.cast_spell master @a ~ ~ ~ 100 1
