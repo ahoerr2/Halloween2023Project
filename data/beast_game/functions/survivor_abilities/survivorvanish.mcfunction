@@ -31,6 +31,7 @@ execute as @e[team=Survivors,scores={vanish_percent=1..},tag=VanishRecharge] run
 execute as @e[team=Survivors,scores={vanish_percent=1..},tag=VanishRecharge] run scoreboard players operation @s vanish_display_rate /= @s vanish_convert_rate
 execute as @a[team=Survivors,scores={vanish_percent=1..},tag=VanishRecharge] at @s if predicate beast_game:is_sneaking run title @s actionbar [{"text":"Vanish Reacharging ","color": "red"},{"text":"[10s full]: ","color": "gold"},{"score":{"name":"*", "objective":"vanish_display_rate"},"color": "green"},{"text":"s","color": "aqua"}]
 
-# Once Recharge is over
-execute as @a[team=Survivors,scores={vanish_percent=200..,vanish_sneaking_notifier=1},tag=VanishRecharge] run scoreboard players set @s vanish_sneaking_notifier 0
-execute as @a[team=Survivors,scores={vanish_percent=200..},tag=VanishRecharge] at @s run tag @s remove VanishRecharge
+# Once Recharge is over allow the player to use vanish again [WIP:] Add sound effect
+execute as @a[team=Survivors,scores={vanish_percent=600..,vanish_sneaking_notifier=1},tag=VanishRecharge] run scoreboard players set @s vanish_sneaking_notifier 0
+execute as @a[team=Survivors,scores={vanish_percent=600..},tag=VanishRecharge] at @s run scoreboard players set @s vanish_percent 200
+execute as @a[team=Survivors,scores={vanish_percent=600..},tag=VanishRecharge] at @s run tag @s remove VanishRecharge
