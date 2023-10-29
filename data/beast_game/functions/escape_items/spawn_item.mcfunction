@@ -18,10 +18,10 @@ execute if score #NUM SPAWN matches 2 if score #NUM ITEM matches 3 run summon mi
 execute if score #NUM SPAWN matches 2 if score #NUM ITEM matches 4 run summon minecraft:item_display -417 61 18 {item_display:"fixed",item:{id:"minecraft:lever",Count:1b}}
 
 #Spawn item at picnic area
-execute if score #NUM SPAWN matches 3 if score #NUM ITEM matches 1 run summon minecraft:item_display -328 69 7 {item_display:"fixed",item:{id:"minecraft:iron_axe",Count:1b}}
-execute if score #NUM SPAWN matches 3 if score #NUM ITEM matches 2 run summon minecraft:item_display -328 69 7 {item_display:"fixed",item:{id:"minecraft:brick",Count:1b}}
-execute if score #NUM SPAWN matches 3 if score #NUM ITEM matches 3 run summon minecraft:item_display -328 69 7 {item_display:"fixed",item:{id:"minecraft:tnt",Count:1b}}
-execute if score #NUM SPAWN matches 3 if score #NUM ITEM matches 4 run summon minecraft:item_display -328 69 7 {item_display:"fixed",item:{id:"minecraft:lever",Count:1b}}
+execute if score #NUM SPAWN matches 3 if score #NUM ITEM matches 1 run summon minecraft:item_display -381 73 7 {item_display:"fixed",item:{id:"minecraft:iron_axe",Count:1b}}
+execute if score #NUM SPAWN matches 3 if score #NUM ITEM matches 2 run summon minecraft:item_display -381 73 7 {item_display:"fixed",item:{id:"minecraft:brick",Count:1b}}
+execute if score #NUM SPAWN matches 3 if score #NUM ITEM matches 3 run summon minecraft:item_display -381 73 7 {item_display:"fixed",item:{id:"minecraft:tnt",Count:1b}}
+execute if score #NUM SPAWN matches 3 if score #NUM ITEM matches 4 run summon minecraft:item_display -381 73 7 {item_display:"fixed",item:{id:"minecraft:lever",Count:1b}}
 
 #Spawn item in trees
 execute if score #NUM SPAWN matches 4 if score #NUM ITEM matches 1 run summon minecraft:item_display -407 73 44 {item_display:"fixed",item:{id:"minecraft:iron_axe",Count:1b}}

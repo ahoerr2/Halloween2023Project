@@ -7,7 +7,7 @@ scoreboard players remove @e[scores={VisionTimer=1..}] VisionTimer 1
 # Updates the display actionbar timer by converting the tickrate of the VisionTimer to seconds
 execute as @e[scores={VisionTimer=1..}] run scoreboard players operation @s VisionDisplayTimer = @s VisionTimer
 execute as @e[scores={VisionTimer=1..}] run scoreboard players operation @s VisionDisplayTimer /= @s TickConversionRate
-title @a[scores={VisionTimer=1..}] actionbar [{"text":"Cooldown: ","color": "white"},{"score":{"name":"*", "objective":"VisionDisplayTimer"},"color": "red"},{"text":"s","color": "red"}]
+title @a[scores={VisionTimer=1..}] actionbar [{"text":"Vision Cooldown: ","color": "white"},{"score":{"name":"*", "objective":"VisionDisplayTimer"},"color": "red"},{"text":"s","color": "red"}]
 
 # Beast Boost Ability
 execute as @a[scores={CarrotUsed=1..,DashTimer=..0}] at @s run playsound entity.illusioner.mirror_move master @s 
