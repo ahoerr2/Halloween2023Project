@@ -3,8 +3,9 @@ function beast_game:exit_functions/repair_exits
 
 
 #Replace button title "Start" with "Spectate" and update GAMESTATE variable
-kill @e[type=armor_stand,name="Start"]
-summon armor_stand -149 149 42 {Invisible:1b,Marker:1b,CustomName:'{"text":"Spectate","color":"gray","bold":true}',CustomNameVisible:1b}
+kill @e[type=armor_stand,tag=Start]
+kill @e[type=armor_stand,tag=Spectate]
+summon armor_stand -149 149 42 {Invisible:1b,Marker:1b,CustomName:'{"text":"Spectate","color":"gray","bold":true}',CustomNameVisible:1b,Tags:[Spectate]}
 scoreboard players set #NUM GAMESTATE 1
 scoreboard players set #NUM ITEM_OBTAINED 0
 

@@ -40,8 +40,8 @@ scoreboard objectives add SPAWN dummy
 scoreboard objectives add GAMESTATE dummy
 scoreboard objectives add Players dummy {"text":"Survivors","color":"dark_red","bold":true}
 
-#Create "Start" hologram above start button and update GAMESTATE variable
-kill @e[type=armor_stand,name="Start"]
-kill @e[type=armor_stand,name="Spectate"]
-summon armor_stand -149 149 42 {Invisible:1b,Marker:1b,CustomName:'{"text":"Start","color":"green","bold":true}',CustomNameVisible:1b}
+#Create Start hologram above start button and update GAMESTATE variable
+kill @e[type=armor_stand,tag=Start]
+kill @e[type=armor_stand,tag=Spectate]
+summon armor_stand -149 149 42 {Invisible:1b,Marker:1b,CustomName:'{"text":"Start","color":"green","bold":true}',CustomNameVisible:1b,Tags:[Start]}
 scoreboard players set #NUM GAMESTATE 0
