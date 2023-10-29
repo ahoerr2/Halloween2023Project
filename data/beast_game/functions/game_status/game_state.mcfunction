@@ -44,6 +44,7 @@ function beast_game:survivor_abilities/holdingcompass
 function beast_game:survivor_abilities/holdingtorch
 
 execute as @a[team=Survivors] at @s run function beast_game:survivor_abilities/survivorcompass
+effect give @a[team=Survivors,scores={am_carrying_item=1}] minecraft:glowing 1 0 true
 
 
 #Exit particle effects and display hint if a player is near any of the possible escape routes
