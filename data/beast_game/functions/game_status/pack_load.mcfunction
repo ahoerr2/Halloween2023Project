@@ -24,6 +24,7 @@ scoreboard objectives add torch_sound_amt dummy "Torch Sound Amt"
 scoreboard objectives add torch_sound_time dummy "Torch Sound Time"
 scoreboard objectives add torch_sound_modulo dummy "Torch Sound Modulo"
 scoreboard objectives add torch_pull_time dummy "Torch Pull Time"
+scoreboard objectives add DashParticleTime dummy "Dash Particle Time"
 scoreboard objectives add DIED dummy
 scoreboard objectives add KILLS playerKillCount
 scoreboard objectives add TIMER dummy

@@ -58,6 +58,7 @@ scoreboard players set @a[team=Survivors] torch_sound_time 0
 scoreboard players set @a[team=Survivors] torch_pull_time 0
 scoreboard players set @a[team=Survivors] torch_sound_modulo 100
 scoreboard players set @a[team=Survivors] am_carrying_item 0
+scoreboard players set @a[team=Beast] DashParticleTime 0
 
 tag @a remove VanishRecharge
 tag @a remove Vanished
