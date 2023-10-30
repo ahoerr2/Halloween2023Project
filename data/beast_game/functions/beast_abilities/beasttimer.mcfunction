@@ -18,7 +18,8 @@ scoreboard players set @a[team=Beast,scores={CarrotUsed=1..,DashTimer=..0}] Dash
 scoreboard players reset @a[team=Beast,scores={CarrotUsed=1..}] CarrotUsed
 
 # Emit Particles for the Beast Boost Ability
-execute as @a[team=Beast,scores={DashParticleTime=1..}] at @s run particle minecraft:lava ~ ~ ~ 0.2 0 0.2 0.1 5 force
+execute as @a[team=Beast,scores={DashParticleTime=1..}] at @s run particle minecraft:soul_fire_flame ~ ~ ~ 0.2 -0.1 0.2 0.01 10 force
+execute as @a[team=Beast,scores={DashParticleTime=1..}] at @s run particle minecraft:soul ~ ~ ~ 0.2 0.1 0.2 0.05 4 force
 
 scoreboard players remove @e[team=Beast,scores={DashTimer=1..}] DashTimer 1
 scoreboard players remove @e[team=Beast,scores={DashParticleTime=1..}] DashParticleTime 1
