@@ -27,7 +27,8 @@ scoreboard players set #NUM XP 300
 
 teleport @a[team=Beast] -514 67 17 facing -513 67 17
 teleport @a[team=Survivors] -363 72 71 facing -364 72 70
-setworldspawn -363 72 71 
+spawnpoint @a[team=Survivors] -363 72 71 
+setworldspawn -130 146 42
 
 item replace entity @a[team=Survivors] hotbar.0 with torch{display:{Name:'[{"text": "Survivor\'s Torch","color":"gray","bold": true,"italic": false}]'}} 1
 item replace entity @a[team=Survivors] hotbar.3 with compass{display:{Name:'[{"text": "Survivor\'s Compass","color":"gray","bold": true,"italic": false}]'}} 1

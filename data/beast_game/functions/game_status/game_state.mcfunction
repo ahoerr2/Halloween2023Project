@@ -57,3 +57,9 @@ execute as @a[team=Survivors] run function beast_game:exit_functions/hint_check
 # Horrible code but fixes armor stand duplication bug
 execute if score #NUM GAMESTATE matches 0 run kill @e[type=armor_stand,tag=Spectate]
 execute if score #NUM GAMESTATE matches 1 run kill @e[type=armor_stand,tag=Start]
+
+# Make sure villager right clicks can be done again
+# execute as @e[type=minecraft:interaction,nbt={interaction:{}},tag=Tutorial] run say hi
+
+teleport @e[type=villager,tag=Tutorial] -185 75.5 118
+teleport @e[type=villager,tag=Church] -144 146 44
