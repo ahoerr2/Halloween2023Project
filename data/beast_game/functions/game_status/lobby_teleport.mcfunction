@@ -1,0 +1,1 @@
+teleport @a -134 146 42 facing -135 146 42

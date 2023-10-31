@@ -32,4 +32,4 @@ title @a times 20 100 20
 title @a title {"text":"GAME OVER","color":"red"}
 title @a subtitle {"text":""}
 setworldspawn -138 146 42 
-teleport @a -134 146 42 facing -135 146 42
+schedule function beast_game:game_status/lobby_teleport 1s
