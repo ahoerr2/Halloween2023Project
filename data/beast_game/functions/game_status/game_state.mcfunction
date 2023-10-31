@@ -63,3 +63,4 @@ execute if score #NUM GAMESTATE matches 1 run kill @e[type=armor_stand,tag=Start
 
 teleport @e[type=villager,tag=Tutorial] -185 75.5 118
 teleport @e[type=villager,tag=Church] -144 146 44
+teleport @e[type=villager,tag=Credits] -144 146 38

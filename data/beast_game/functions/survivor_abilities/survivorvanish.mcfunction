@@ -23,6 +23,7 @@ execute as @a[tag=Vanished,tag=!VanishRecharge] at @s if predicate beast_game:no
 
 # While you are not vanished you will recharge vanish time and can use it when you are full
 execute as @a[team=Survivors,scores={vanish_percent=0},tag=!VanishRecharge] at @s run playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 0.5 1.5 0.5
+execute as @a[team=Survivors,scores={vanish_percent=0},tag=!VanishRecharge] at @s run tag @s remove Vanished
 execute as @a[team=Survivors,scores={vanish_percent=0},tag=!VanishRecharge] at @s run tag @s add VanishRecharge
 execute as @a[team=Survivors,tag=VanishRecharge] at @s run scoreboard players add @s vanish_percent 1
 
