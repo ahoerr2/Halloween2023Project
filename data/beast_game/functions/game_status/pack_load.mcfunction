@@ -26,7 +26,7 @@ scoreboard objectives add torch_sound_modulo dummy "Torch Sound Modulo"
 scoreboard objectives add torch_pull_time dummy "Torch Pull Time"
 scoreboard objectives add DashParticleTime dummy "Dash Particle Time"
 scoreboard objectives add villager_talk minecraft.custom:talked_to_villager "Villager Talk"
-scoreboard objectives add DIED dummy
+scoreboard objectives add DIED deathCount
 scoreboard objectives add KILLS playerKillCount
 scoreboard objectives add TIMER dummy
 scoreboard objectives add XP dummy
